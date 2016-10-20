@@ -2,11 +2,7 @@ public IPaginationResult<MMemberFinanceIncomeInfo> GetList(GetListParameter para
         {
             #region
             var paginationResult = new PaginationResult<MMemberFinanceIncomeInfo>();
-            //var incomeTypeList = new int[]{
-            //    (int)MIncomeType.淘宝拍链接充值
-            //    ,(int)MIncomeType.网银充值
-            //    ,(int)MIncomeType.支付宝手动充值
-            //};
+
             var sqlWhere = new StringBuilder(" ");
             var sqlWhere2 = new StringBuilder(" ");
             if (!string.IsNullOrEmpty(parameter.LoginName))
